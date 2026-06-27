@@ -1449,6 +1449,26 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      },
+      {
+        "type": "color",
+        "id": "background_bar_color",
+        "label": "Color for Background Bar"
+      },
+       {
+        "type": "color",
+        "id": "progress_message_color",
+        "label": "Color for Message"
+      },
+      {
+        "type": "color",
+        "id": "progress_bar_color",
+        "label": "Color for Progress Bar"
+      },
+       {
+        "type": "color",
+        "id": "completed_bar_color",
+        "label": "Color for Completed Bar"
       }
     ]
   }
