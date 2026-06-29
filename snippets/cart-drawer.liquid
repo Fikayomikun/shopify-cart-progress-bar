@@ -87,6 +87,16 @@
           class="cart__contents cart-drawer__form"
           method="post"
         >
+
+      {% comment %} Custom code added below {% endcomment %}
+          {% if localization.country.iso_code == 'DE' %}
+        {% render 'cart-progress-bar' %}
+          {% elsif localization.country.iso_code == 'GB' %}
+        {% render 'cart-subscription-progress-bar-uk' %}
+       {% endif %}
+      {% comment %} Custom code added above {% endcomment %}
+
+
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
